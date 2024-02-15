@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+class Solution{
+ static void Main(string[]args){
+ 
+ int i=4;
+ double d =4.0;
+ string s ="Polyilaro";
+ 
+ 
+ 
+ 
+ Console.WriteLine (s);
+ int T = int.Parse (Console.ReadLine());
+ 
+ int sum = i + T;
+ 
+     Console.WriteLine ($"the sum is :{sum}");
+     
+double n = double.Parse(Console.ReadLine());
+  double add = d + n;
+  Console.WriteLine ($"the sum is :{add}");
+ 
+ string statement = Console.ReadLine ();
+   string T_statement = s + " " + statement;
+    Console.WriteLine  (T_statement);
+ 
+ 
+//Declaresecondinteger,double,andStringvariables.
+ 
+ //Readandsaveaninteger,double,andStringtoyourvariables.
+ 
+ //Printthesumofbothintegervariablesonanewline.""
+ 
+ //Printthesumofthedoublevariablesonanewline.
+ 
+ //ConcatenateandprinttheStringvariablesonanewline
+ //The's'variableaboveshouldbeprintedfirst.
+}
+}
