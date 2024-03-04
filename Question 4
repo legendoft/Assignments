@@ -1,0 +1,55 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Enter the number of rows for the matrices:");
+        int rows = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the number of columns for the matrices:");
+        int columns = int.Parse(Console.ReadLine());
+
+        int[,] matrix1 = new int[rows, columns];
+        int[,] matrix2 = new int[rows, columns];
+        int[,] sumMatrix = new int[rows, columns];
+
+        Console.WriteLine("Enter the elements of the first matrix:");
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < columns; j++)
+            {
+                matrix1[i, j] = int.Parse(Console.ReadLine());
+            }
+        }
+
+        Console.WriteLine("Enter the elements of the second matrix:");
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < columns; j++)
+            {
+                matrix2[i, j] = int.Parse(Console.ReadLine());
+            }
+        }
+
+        // Compute the sum of the matrices
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < columns; j++)
+            {
+                sumMatrix[i, j] = matrix1[i, j] + matrix2[i, j];
+            }
+        }
+
+        // Display the sum matrix
+        Console.WriteLine("The sum of the matrices is:");
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < columns; j++)
+            {
+                Console.Write(sumMatrix[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
