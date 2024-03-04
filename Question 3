@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Convert
+{
+    class Convert 
+    {
+     static void Main(string[] args){
+   String name;
+   Console.WriteLine("Enter the name");
+   name = Console.ReadLine();
+   String[] nameArray = new String[1];
+   nameArray [0] = name;
+   String newname = nameArray[0].ToUpper();
+   Console.WriteLine(newname);
+        }
+    }
+}
