@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Question2
+{
+    class QuestionF
+    {
+     
+static int smallestIndex( int[] arrayElement, int size){
+        int minimum = arrayElement[0];
+       int minimumIndex = 0;
+           for(int i = 0; i < size; i++){
+           if (arrayElement[i] < minimum){
+               minimum = arrayElement[i];
+               minimumIndex = i;
+           }
+       }
+       return minimumIndex;
+    }
+    
+    
+    
+       static void Main(string[] args){
+   
+   int[] ourarray = {1,2,3,4,5};
+  int answer = smallestIndex(ourarray, ourarray.Length);
+           Console.WriteLine(answer);
+        }
+    }
+}
