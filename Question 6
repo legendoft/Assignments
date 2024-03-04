@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Convert
+{
+    class Convert 
+    {
+     static void Main(string[] args){
+    
+    int number;
+       
+       Console.WriteLine("Enter the number");
+      number = int.Parse(Console.ReadLine());
+      if (number == 0){ 
+       Console.WriteLine(number + " is zero");
+      }
+      else if(number > 0){
+       Console.WriteLine(number + " is Positive");   
+      }
+      else { 
+      Console.WriteLine(number + " is Negative");   
+       }
+      }
+    }
+}
